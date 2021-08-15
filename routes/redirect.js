@@ -15,7 +15,7 @@ router.get('/:code', async (req, res) => {
     }
     catch (err) {
         console.error(err)
-        res.status(500).json('Server Error')
+        res.status(500).json('Server Error | Checl log for more details')
     }
 })
 module.exports = router
