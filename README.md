@@ -9,6 +9,6 @@ npm install
 #We also need to expose some envrionemnt variable which are as below:
 
 
-PORT= <Port number with in which you want yopur applcation should listen>
+PORT= <Port number>
 DB_URL= <Mongo connection url>
-BASEURL=<Hostname>
+BASE_URL=<Hostname>
