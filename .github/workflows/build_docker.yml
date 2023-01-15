@@ -20,7 +20,7 @@ jobs:
     - name: docker login
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
-        image: romitsutariya/clinet
+        image: romitsutariya/url-shortner
         tags: latest
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
