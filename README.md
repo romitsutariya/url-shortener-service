@@ -1,14 +1,23 @@
-# url-shortener-service
+# URL-shortener-service
 
-A URL shortener built with powerful tools to help you grow and protect your brand.
+A URL shortner built with powerful tools to help you grow and protect your brand.
 
-#To run this project in your envrioeemnt clone this repo and execute following commnad.
-
+To run this project in your envrioeemnt clone this repo and execute following commnad.
+```
 npm install
+```
 
-#We also need to expose some envrionemnt variable which are as below:
+We also need to expose some envrionemnt variable which are as below:
 
+## CICD PipeLine Status
 
-PORT= <Port number>
-DB_URL= <Mongo connection url>
-BASE_URL=<Hostname>
+[![Docker Image CI](https://github.com/romitsutariya/url-shortener-service/actions/workflows/build_docker.yml/badge.svg)](https://github.com/romitsutariya/url-shortener-service/actions/workflows/build_docker.yml)
+
+```
+PORT=XXXX  [Port number]
+
+DB_URL=XXXX [Mongo connection url]
+
+BASE_URL=XXXX [Hostname]
+
+```
