@@ -1,0 +1,27 @@
+
+#Pipeline will trigger only on master branch
+#push new docker tag to docker hub
+#please don't forgot to set credential in github setting
+
+
+
+name: Docker Image CI
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: docker login
+      uses: mr-smithers-excellent/docker-build-push@v5
+      with:
+        image: romitsutariya/clinet
+        tags: latest
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
