@@ -14,5 +14,5 @@ app.use('/', require('./routes/redirect'))
 app.use('/api/url', require('./routes/url'))
 
 //Listen for incoming requests
-const PORT = process.env.PORT || 6000
+const PORT = process.env.PORT || 5000
 app.listen(PORT, console.log(`server started, listening PORT ${PORT}`))
