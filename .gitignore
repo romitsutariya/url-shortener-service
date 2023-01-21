@@ -116,3 +116,5 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+k8s-1-25-4-do-0-blr1-1673694056698-kubeconfig.yaml
+kubectl.exe
